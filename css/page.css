@@ -12,22 +12,20 @@ body {
 
 .show-title {
   font-size: 44px;
-  font-family: Poppins;
+  font-family: "Poppins";
   color: #ffffff;
   display: block;
-  position: absolute;
-  bottom: 200px;
-  margin-left: 20px;
+  position: relative;
 }
 .show-text {
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Poppins";
   font-weight: lighter;
+  line-height: 32px;
   color: #ffffff;
   display: block;
-  position: absolute;
-  bottom: 100px;
-  margin-left: 20px;
+  position: relative;
+
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -45,19 +43,21 @@ body {
   display: none;
 }
 
-.item-1:hover .show-text-box {
+.item:hover .show-text-box {
   display: block;
 }
 
-.item-1:hover .hide {
+.item:hover .hide-text-box {
   display: none;
 }
 
 .show-text-box {
-  width: 100px;
+  width: 70%;
   height: 100px;
-
+  padding: 40px;
   opacity: 0;
+  position: absolute;
+  bottom: 130px;
 
   animation: fadeIn 0.5s;
   animation-delay: 0.5s;
@@ -73,16 +73,39 @@ body {
   }
 }
 
-.hide {
+.hide-text-box {
+  width: 70%;
+  height: 100%;
   position: absolute;
-  bottom: 150px;
-  margin-left: auto;
-  display: block;
+  bottom: 0px;
+
+  animation: fadeOut 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hide {
+  position: relative;
+  height: 100px;
+  left: 50px;
+  top: 950px;
+  padding: 40px;
+  text-align: left;
   font-size: 34px;
   line-height: 1.1em;
   font-size: 44px;
-  font-family: Poppins;
-  text-indent: 10px;
+  font-family: "Poppins";
+
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);

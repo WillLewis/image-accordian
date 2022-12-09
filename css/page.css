@@ -98,13 +98,18 @@ body {
   position: relative;
   height: 100px;
   left: 50px;
-  top: 950px;
+  top: 1050px;
   padding: 40px;
   text-align: left;
   font-size: 34px;
   line-height: 1.1em;
   font-size: 44px;
   font-family: "Poppins";
+
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);

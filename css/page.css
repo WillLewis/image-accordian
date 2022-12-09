@@ -74,10 +74,11 @@ body {
 }
 
 .hide-text-box {
-  width: 70%;
-  height: 100%;
+  width: 100%;
+  height: 24%;
   position: absolute;
   bottom: 0px;
+  padding: 20px;
 
   animation: fadeOut 0.5s;
   animation-delay: 0.5s;
@@ -97,10 +98,7 @@ body {
 .hide {
   position: relative;
   height: 100px;
-  left: 50px;
-  top: 1050px;
-  padding: 40px;
-  text-align: left;
+
   font-size: 34px;
   line-height: 1.1em;
   font-size: 44px;
